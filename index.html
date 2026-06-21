@@ -44,6 +44,15 @@
     padding: 0 24px;
   }
 
+  .top-deco{
+    text-align:center;
+    font-size: 0.85rem;
+    color: var(--acento);
+    background: var(--powder-soft);
+    padding: 7px 0;
+    letter-spacing: 0.1em;
+  }
+
   nav{
     position: sticky;
     top: 0;
@@ -98,6 +107,7 @@
   }
   .big-star.bs1{ font-size: 200px; top: -60px; right: -20px; line-height: 1; }
   .big-star.bs2{ font-size: 140px; bottom: -50px; left: -30px; line-height: 1; color: var(--powder-soft); }
+  .big-star.bs3{ font-size: 90px; top: 30%; left: 18%; line-height: 1; color: var(--acento); opacity: 0.18; }
 
   .star{
     position:absolute;
@@ -110,6 +120,17 @@
   .star.s3{ top: 12%; right: 28%; font-size: 0.9rem; opacity: 0.6; }
   .star.s4{ top: 75%; right: 12%; font-size: 1.2rem; opacity: 0.55; }
   .star.s5{ top: 38%; right: 6%; font-size: 0.7rem; opacity: 0.45; }
+  .star.s6{ top: 8%; left: 38%; font-size: 0.6rem; opacity: 0.5; }
+  .star.s7{ top: 85%; left: 22%; font-size: 0.9rem; opacity: 0.4; }
+  .star.s8{ top: 50%; left: 14%; font-size: 0.6rem; opacity: 0.4; }
+
+  .section-stars{
+    text-align:center;
+    color: var(--powder);
+    font-size: 1.1rem;
+    letter-spacing: 0.4em;
+    margin: 0 0 18px;
+  }
 
   .hero .wrap{ position:relative; z-index:1; }
 
@@ -365,15 +386,18 @@
 </head>
 <body>
 
+<div class="top-deco">𓇼 ⋆.˚ 𓆉 𓆝 𓆡⋆.˚ 𓇼</div>
+
 <nav>
   <div class="wrap">
     <div class="brand">(•˕ •マ.ᐟ Yenifer Huarachi</div>
     <button class="navtoggle" id="navtoggle" aria-label="Abrir menú">☰</button>
     <ul class="navlinks" id="navlinks">
       <li><a href="#sobre-mi">Conóceme</a></li>
+      <li><a href="#formacion-academica">Formación</a></li>
       <li><a href="#pasatiempos">Pasatiempos</a></li>
       <li><a href="#habilidades">Habilidades</a></li>
-      <li><a href="#cursos">Formación</a></li>
+      <li><a href="#cursos">Cursos</a></li>
       <li><a href="#perfiles">Perfiles</a></li>
       <li><a href="#contacto">Contacto</a></li>
     </ul>
@@ -383,14 +407,18 @@
 <header class="hero">
   <span class="big-star bs1">✦</span>
   <span class="big-star bs2">✦</span>
+  <span class="big-star bs3">★</span>
   <span class="star s1">✦</span>
   <span class="star s2">⋆</span>
   <span class="star s3">✧</span>
   <span class="star s4">✦</span>
   <span class="star s5">⋆</span>
+  <span class="star s6">✧</span>
+  <span class="star s7">⋆</span>
+  <span class="star s8">✦</span>
   <div class="wrap">
     <p class="kaomoji">(•˕ •マ.ᐟ</p>
-    <p class="eyebrow">✦ Bienvenido a mi rincón ✦</p>
+    <p class="eyebrow">✦ Portafolio personal ✦</p>
     <h1>Hola, soy <br><span class="accent">Yenifer Huarachi</span></h1>
     <p class="lead">Estudiante de Inteligencia Artificial en la UCSP, apasionada por la tecnología y el aprendizaje constante. Esta es mi página personal.</p>
     <div class="hero-cta">
@@ -403,16 +431,39 @@
 <section id="sobre-mi">
   <div class="wrap">
     <p class="section-tag">Conóceme</p>
+    <p class="section-stars">✦ ⋆ ✧ ⋆ ✦</p>
     <h2 class="section-title">Un poco sobre mí</h2>
     <div class="about-grid">
       <div>
-        <p>Apasionada por la tecnología y la innovación, soy Yenifer Rocío Huarachi Halanoca, estudiante de la carrera de Inteligencia Artificial en la Universidad Católica San Pablo. Me interesa explorar el potencial de la inteligencia artificial y la programación para desarrollar soluciones que contribuyan a resolver problemas reales.</p>
+        <p>Apasionada por la tecnología y la innovación, soy Yenifer Rocío Huarachi Halanoca, estudiante de la carrera de Inteligencia Artificial en la <a href="https://ucsp.edu.pe/" target="_blank" rel="noopener" style="color: var(--acento); font-weight:600; text-decoration: underline;">Universidad Católica San Pablo</a>. Me interesa explorar el potencial de la inteligencia artificial y la programación para desarrollar soluciones que contribuyan a resolver problemas reales.</p>
         <p>Me caracterizo por mi curiosidad, compromiso con el aprendizaje y capacidad de adaptación, fortaleciendo constantemente habilidades como la escucha activa, el pensamiento analítico, la creatividad y el trabajo en equipo. Mi meta es seguir creciendo académica y profesionalmente para participar en proyectos innovadores que generen un impacto positivo en la sociedad.</p>
       </div>
       <div class="about-card">
         <h3>📍 Dato rápido</h3>
-        <p>Nombre: Yenifer Rocío Huarachi Halanoca<br>Edad: 18 años<br>Ciudad: Arequipa, Perú<br>Estudios: Inteligencia Artificial · UCSP</p>
+        <p>Nombre: Yenifer Rocío Huarachi Halanoca<br>Edad: 18 años<br>Ciudad: Arequipa, Perú<br>Estudios: Inteligencia Artificial · <a href="https://ucsp.edu.pe/" target="_blank" rel="noopener" style="color: var(--acento); font-weight:600;">UCSP</a></p>
       </div>
+    </div>
+  </div>
+</section>
+
+<section id="formacion-academica">
+  <div class="wrap">
+    <p class="section-tag">✦ Trayectoria ✦</p>
+    <p class="section-stars">✦ ⋆ ✧ ⋆ ✦</p>
+    <h2 class="section-title">Formación académica</h2>
+    <div class="course-list">
+      <a class="course-item" href="https://ucsp.edu.pe/" target="_blank" rel="noopener">
+        <span class="course-name">Universidad Católica San Pablo</span>
+        <span class="course-meta">Inteligencia Artificial · Actual <span class="course-link-icon">↗</span></span>
+      </a>
+      <a class="course-item" href="https://academiamendel.edu.pe/" target="_blank" rel="noopener">
+        <span class="course-name">Academia Mendel</span>
+        <span class="course-meta">Preparación preuniversitaria <span class="course-link-icon">↗</span></span>
+      </a>
+      <a class="course-item" href="https://www.innovaschools.edu.pe/" target="_blank" rel="noopener">
+        <span class="course-name">Innova Schools</span>
+        <span class="course-meta">Educación secundaria <span class="course-link-icon">↗</span></span>
+      </a>
     </div>
   </div>
 </section>
@@ -420,6 +471,7 @@
 <section id="pasatiempos">
   <div class="wrap">
     <p class="section-tag">Pasatiempos</p>
+    <p class="section-stars">✦ ⋆ ✧ ⋆ ✦</p>
     <h2 class="section-title">Lo que me gusta hacer</h2>
     <div class="hobby-grid">
       <div class="hobby-card">
@@ -444,6 +496,7 @@
 <section id="habilidades">
   <div class="wrap">
     <p class="section-tag">✦ Habilidades blandas ✦</p>
+    <p class="section-stars">✦ ⋆ ✧ ⋆ ✦</p>
     <h2 class="section-title">En qué soy buena</h2>
     <div class="skills-list">
       <div class="skill-item">
@@ -468,8 +521,9 @@
 
 <section id="cursos">
   <div class="wrap">
-    <p class="section-tag">Mi formación</p>
-    <h2 class="section-title">Cursos llevados</h2>
+    <p class="section-tag">✦ Mi formación ✦</p>
+    <p class="section-stars">✦ ⋆ ✧ ⋆ ✦</p>
+    <h2 class="section-title">Cursos de la carrera</h2>
     <div class="course-list">
       <a class="course-item" href="https://www.linkedin.com/in/santisteban/" target="_blank" rel="noopener">
         <span class="course-name">Fundamentos de Programación</span>
@@ -502,6 +556,7 @@
 <section id="perfiles">
   <div class="wrap">
     <p class="section-tag">✦ Más perfiles ✦</p>
+    <p class="section-stars">✦ ⋆ ✧ ⋆ ✦</p>
     <h2 class="section-title">Compañeras de carrera</h2>
     <div class="hobby-grid">
       <a class="hobby-card" href="https://annel-nn.github.io/" target="_blank" rel="noopener" style="text-decoration:none; color: var(--tinta);">
@@ -526,6 +581,7 @@
       <div class="social-row">
         <a class="social-pill" href="mailto:yeniferociohuarachi@gmail.com">✉️ Email</a>
         <a class="social-pill" href="https://www.linkedin.com/in/yenifer-rocio-huarachi-halanoca-b77706418/" target="_blank" rel="noopener">🔗 LinkedIn</a>
+        <a class="social-pill" href="https://www.instagram.com/" target="_blank" rel="noopener">📸 Instagram</a>
       </div>
     </div>
   </div>
@@ -533,7 +589,7 @@
 
 <footer>
   <div class="wrap">
-    <p class="footer-deco">(•˕ •マ.ᐟ ⋆ (•˕ •マ.ᐟ ⋆ (•˕ •マ.ᐟ ⋆ (•˕ •マ.ᐟ</p>
+    <p class="footer-deco">𓆝 𓆟 𓆞 𓆝 𓆟𓆝 𓆟 𓆞 𓆝 𓆟𓆝 𓆟 𓆞 𓆝 𓆟𓆝 𓆟 𓆞 𓆝 𓆟</p>
     © <span id="year"></span> Yenifer Rocío Huarachi Halanoca
   </div>
 </footer>
